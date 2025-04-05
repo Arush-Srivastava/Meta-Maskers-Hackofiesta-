@@ -7,8 +7,8 @@ const Logo = () => {
           </div>
         </div>
         <div className="ml-2">
-          <div className="font-bold text-xl text-gray-800">JOYS</div>
-          <div className="text-xs text-gray-500 -mt-1">SPACE</div>
+          <div className="font-bold text-2xl text-gray-800">Meta</div>
+          <div className="text-2xs text-gray-500 -mt-1">Maskers</div>
         </div>
       </div>
     );

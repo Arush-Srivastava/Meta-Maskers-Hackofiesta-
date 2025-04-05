@@ -13,21 +13,21 @@ const Hero = () => {
           <div className="md:w-1/2 pt-10 md:pt-20">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
               Discover and<br />
-              Collect The Best<br />
+              Create your own<br />
               NFTs Digital Art.
             </h1>
-            <p className="mt-6 text-gray-600 max-w-md">
+            <p className="mt-6 text-gray-600 text-xl max-w-md">
               There are a thousand more NFTs that
-              interest you, find and collect what you like!
+              interest you, find and collect what you like, or make one yourself!
             </p>
             <div className="mt-8 flex space-x-4">
-              <button className="bg-primary text-white px-6 py-3 rounded-full flex items-center">
+              {/* <button className="bg-primary text-white px-6 py-3 rounded-full flex items-center">
                 <span className="mr-2">◆</span>
                 Explore
-              </button>
-              <button className="bg-white text-gray-800 px-6 py-3 rounded-full flex items-center">
+              </button> */}
+              <button className="bg-white text-gray-800 font-bold px-6 py-3 rounded-full flex items-center">
                 <span className="mr-2">✎</span>
-                Create
+                Create Your Own NFT !
               </button>
             </div>
           </div>
