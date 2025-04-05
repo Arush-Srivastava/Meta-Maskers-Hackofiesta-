@@ -43,26 +43,6 @@ const Hero = () => {
                 e.target.src = "https://via.placeholder.com/600x500?text=Dragon+NFT";
               }}
             />
-            
-            {/* Flying dragons */}
-            <img 
-              src="/small-dragon.png" 
-              alt="Small dragon" 
-              className="absolute top-1/4 left-1/4 w-16 h-16 transform -rotate-12"
-              onError={(e) => {
-                e.target.onerror = null;
-                e.target.src = "https://via.placeholder.com/50?text=🐉";
-              }}
-            />
-            <img 
-              src="/small-dragon.png" 
-              alt="Small dragon" 
-              className="absolute top-1/3 left-1/3 w-12 h-12 transform rotate-45"
-              onError={(e) => {
-                e.target.onerror = null;
-                e.target.src = "https://via.placeholder.com/50?text=🐉";
-              }}
-            />
           </div>
         </div>
         
