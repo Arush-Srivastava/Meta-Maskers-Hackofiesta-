@@ -1,6 +1,13 @@
 import { FiHeart } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const navigate = useNavigate();
+
+  const handleCreateClick = () => {
+    navigate('/create');
+  };
+
   return (
     <div className="relative overflow-hidden">
       {/* Background */}
@@ -21,11 +28,10 @@ const Hero = () => {
               interest you, find and collect what you like, or make one yourself!
             </p>
             <div className="mt-8 flex space-x-4">
-              {/* <button className="bg-primary text-white px-6 py-3 rounded-full flex items-center">
-                <span className="mr-2">◆</span>
-                Explore
-              </button> */}
-              <button className="bg-white text-gray-800 font-bold px-6 py-3 rounded-full flex items-center">
+              <button 
+                className="bg-white text-gray-800 font-bold px-6 py-3 rounded-full flex items-center"
+                onClick={handleCreateClick}
+              >
                 <span className="mr-2">✎</span>
                 Create Your Own NFT !
               </button>
@@ -73,7 +79,6 @@ const NFTCard = ({ image, likes, fallbackText }) => {
           src={image || "/placeholder.svg"} 
           alt="NFT" 
           className="w-full h-64 object-cover"
-          
         />
         <div className="absolute top-3 right-3 bg-white rounded-full px-3 py-1 flex items-center shadow-md">
           <FiHeart className="text-gray-500 mr-1" />
