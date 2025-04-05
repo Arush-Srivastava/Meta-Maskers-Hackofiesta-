@@ -38,10 +38,6 @@ const Hero = () => {
               src="/dragon.png" 
               alt="Dragon NFT" 
               className="w-full h-auto object-cover"
-              onError={(e) => {
-                e.target.onerror = null;
-                e.target.src = "https://via.placeholder.com/600x500?text=Dragon+NFT";
-              }}
             />
           </div>
         </div>
@@ -77,10 +73,7 @@ const NFTCard = ({ image, likes, fallbackText }) => {
           src={image || "/placeholder.svg"} 
           alt="NFT" 
           className="w-full h-64 object-cover"
-          onError={(e) => {
-            e.target.onerror = null;
-            e.target.src = `https://via.placeholder.com/400x300?text=${fallbackText}`;
-          }}
+          
         />
         <div className="absolute top-3 right-3 bg-white rounded-full px-3 py-1 flex items-center shadow-md">
           <FiHeart className="text-gray-500 mr-1" />

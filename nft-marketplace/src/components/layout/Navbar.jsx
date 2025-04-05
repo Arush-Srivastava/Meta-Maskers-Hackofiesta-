@@ -13,23 +13,23 @@ const Navbar = () => {
       
       <div className="hidden md:flex items-center mx-4 flex-1 max-w-md">
         <div className="relative w-full">
-          <FiSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+          <FiSearch className="absolute left-3 top-1/2 transform ml-17 -translate-y-1/2 text-gray-400" />
           <input
             type="text"
             placeholder="Search items, collections, and accounts"
-            className="w-full py-2 pl-10 pr-4 border border-gray-200 rounded-full bg-gray-50 focus:outline-none focus:ring-1 focus:ring-primary"
+            className="w-full py-2 pl-10 pr-4 border border-gray-200 ml-17 rounded-full bg-gray-50 focus:outline-none focus:ring-1 focus:ring-primary"
           />
         </div>
       </div>
       
-      <div className="hidden md:flex items-center space-x-6">
+      {/* <div className="hidden md:flex items-center space-x-6">
         <NavLink href="#" label="Home" active />
         <NavLink href="#" label="Explore" hasDropdown />
         <NavLink href="#" label="Activity" hasDropdown />
         <NavLink href="#" label="Community" hasDropdown />
         <NavLink href="#" label="Pages" hasDropdown />
         <NavLink href="#" label="Contact" />
-      </div>
+      </div> */}
       
       <div className="flex items-center ml-4">
         <button className="bg-primary text-white px-4 py-2 rounded-full flex items-center">
