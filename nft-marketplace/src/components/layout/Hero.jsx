@@ -49,8 +49,8 @@ const Hero = () => {
         </div>
         
         {/* NFT Cards */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
-          <NFTCard 
+        <div className="h-full object-contain mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <NFTCard
             image="/nft1.png" 
             likes={72} 
             fallbackText="Colorful Character NFT"
@@ -73,12 +73,12 @@ const Hero = () => {
 
 const NFTCard = ({ image, likes, fallbackText }) => {
   return (
-    <div className="bg-white rounded-xl overflow-hidden shadow-lg">
+    <div className="bg-white rounded-xl overflow-hidden shadow-lg ">
       <div className="relative">
         <img 
           src={image || "/placeholder.svg"} 
           alt="NFT" 
-          className="w-full h-64 object-cover"
+          className="w-full object-cover"
         />
         <div className="absolute top-3 right-3 bg-white rounded-full px-3 py-1 flex items-center shadow-md">
           <FiHeart className="text-gray-500 mr-1" />
